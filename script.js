@@ -26,7 +26,6 @@ document.querySelector(".page1 .pbt a").addEventListener("click",() => {
   locoScroll.scrollTo(document.body.scrollHeight);
   console.log("hwlkjhgc");
 })
-
 document.querySelector(".back-to-top a").addEventListener("click", () => {
   locoScroll.scrollTo(0);
 });
@@ -72,7 +71,7 @@ gsap.to(".under,.nav svg path,.pop", {
     // markers: true,
     start: "-10% top",
     end: "top 90%",
-    scrub: true,
+    scrub: 4,
   },
   color: "#fff",
   fill: "#fff",
@@ -85,7 +84,7 @@ gsap.to(".under,.nav svg path,.pop", {
     // markers: true,
     start: "-10% top",
     end: "top 90%",
-    scrub: true,
+    scrub: 4,
   },
   color: "#000",
   fill: "#000",
